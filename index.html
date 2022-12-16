@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<script
+			src="https://kit.fontawesome.com/359240b071.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Ping coming soon page</title>
+
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="div_img">
+				<img src="./images/logo.svg" alt="PING. logo" />
+			</div>
+			<div class="text">
+				<p>We are launching <b>soon!</b></p>
+				<span>Subscribe and get notified</span>
+			</div>
+			<div class="form_container">
+				<form id="form_Email" action="send">
+					<input
+						id="emailAddress"
+						required
+						placeholder="Your email address..."
+					/>
+					<p id="error" class="d-none">
+						<em>Please provide a valid email address</em>
+					</p>
+				</form>
+				<button type="submit" form="form_Email">Notify Me</button>
+			</div>
+			<div>
+				<img src="./images/illustration-dashboard.png" style="width: 100%" />
+			</div>
+			<footer>
+				<div class="social_media">
+					<i class="fa-brands fa-facebook-f"></i>
+					<i class="fa-brands fa-twitter"></i>
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+				<p>&copy; Copyright Ping. All rights reserved.</p>
+			</footer>
+		</div>
+
+		<footer>
+			<p class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="https://github.com/2D-nz">Denis (2D_NZ)</a>.
+			</p>
+		</footer>
+	</body>
+	<script src="script.js"></script>
+</html>

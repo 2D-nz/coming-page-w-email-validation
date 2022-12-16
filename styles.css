@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+/* 
+- Blue: hsl(223, 87%, 63%)
+- Pale Blue: hsl(223, 100%, 88%)
+- Light Red: hsl(354, 100%, 66%)
+- Gray: hsl(0, 0%, 59%)
+- Very Dark Blue: hsl(209, 33%, 12%)
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) */
+* {
+	font-family: "Libre Franklin", sans-serif;
+}
+body {
+	font-size: 20px;
+}
+
+p {
+	color: hsl(0, 0%, 59%);
+	margin-bottom: 0.5rem;
+}
+.text {
+	margin: 1rem 0;
+}
+b {
+	color: hsl(209, 33%, 12%);
+}
+button {
+	background-color: hsl(223, 87%, 63%);
+	height: 3rem;
+	width: 100%;
+	border-radius: 50rem;
+	color: white;
+	outline: none;
+	border: 0px;
+	box-shadow: 1px;
+	letter-spacing: 1px;
+	box-shadow: -5px 6px 5px 0px rgba(223, 232, 237, 1);
+}
+
+.form_container {
+	margin: 1rem;
+}
+
+input {
+	border-radius: 50rem;
+	color: black;
+	outline: 1px solid hsl(223, 100%, 88%);
+	height: 3rem;
+	margin: 1rem 0;
+	width: 90%;
+	text-align: left;
+	border: 0px;
+	box-shadow: 1px;
+	letter-spacing: 1px;
+	padding-left: 10%;
+}
+
+#error {
+	font-size: 12px;
+	margin-top: -6px;
+	color: hsl(354, 100%, 66%);
+	margin-bottom: 1rem;
+}
+
+.d-none {
+	display: none;
+}
+.invalid {
+	outline: 1px solid hsl(354, 100%, 66%);
+}
+
+input::placeholder {
+	color: hsl(0, 0%, 59%);
+	font-family: "Libre Franklin", sans-serif;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+span {
+	font-size: 12px;
+}
+
+.wrapper {
+	display: grid;
+	justify-content: center;
+	text-align: center;
+	margin: 3rem 1rem;
+}
+
+.div_img {
+	display: flex;
+	justify-content: center;
+}
+
+.div_img img {
+	width: 20%;
+}
+
+.social_media {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 6rem;
+}
+
+.social_media i {
+	color: hsl(223, 87%, 63%);
+	border: 1px solid hsla(223, 100%, 88%, 0.696);
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50rem;
+	display: flex;
+	margin: 0.5rem;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+footer {
+	display: grid;
+	font-size: 15px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	max-width: 20rem;
+	margin: 0 10%;
+}
+
+@media (min-width: 700px) {
+	footer {
+		margin: 0 35%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.div_img img {
+		width: 5rem;
+	}
+
+	.text {
+		font-size: 2rem;
+	}
+	.text span {
+		font-size: 1rem;
+	}
+
+	.form_container {
+		display: grid;
+		grid-auto-flow: column;
+		align-items: center;
+		gap: 1rem;
+		grid-template-columns: 2fr 1fr;
+	}
+	footer {
+		margin: 0 40%;
+	}
+	.wrapper {
+		margin: 3rem 8rem;
+	}
+
+	button:hover {
+		background-color: hsl(223, 93%, 72%);
+		cursor: pointer;
+	}
+
+	footer i:hover {
+		background-color: hsl(223, 87%, 63%);
+		color: white;
+	}
+}
